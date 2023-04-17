@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Knockout Tournament Generator</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+		<h1 class="text-center">Knockout Tournament Generator</h1>
+		<form id="players-form">
+			<div class="form-group">
+				<label for="players-input">Enter player names (separated by commas):</label>
+				<input type="text" class="form-control" id="players-input" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Generate Matchups</button>
+		</form>
+		<div id="matchups-container" class="mt-5">
+			<!-- Matchups will be dynamically generated here -->
+		</div>
+		<button id="pair-button" class="btn btn-primary mt-5 d-none">Pair</button>
+		<div id="winner-container" class="mt-5 d-none">
+			<h2 class="text-center">Winner:</h2>
+			<p id="winner-text" class="text-center"></p>
+		</div>
+	</div>
+
+	<!-- Include Bootstrap JS and your own script -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
